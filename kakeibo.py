@@ -1,10 +1,9 @@
-import streamlit as st
-import openai
-
-from dotenv import load_dotenv
+from dotenv import load_dotenv  # ← これが必要！
 import os
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
+import streamlit as st
+import openai
 import pandas as pd
 import re
 from io import StringIO
