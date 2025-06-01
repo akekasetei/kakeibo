@@ -3,9 +3,9 @@ import openai
 
 from dotenv import load_dotenv
 load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 import os
-openai.api_key = os.getenv("OPEN_AI_KEY")
 import pandas as pd
 import re
 from io import StringIO
