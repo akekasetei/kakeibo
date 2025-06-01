@@ -9,4 +9,5 @@ openai
 streamlit
 pandas
 python-dotenv
+python-dotenv
 # 他にも使用しているモジュールがあれば追加（例：pytesseract, pillow など）
