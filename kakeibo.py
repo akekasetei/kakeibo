@@ -1,13 +1,15 @@
 import streamlit as st
 import openai
+
+from dotenv import load_dotenv
+load_dotenv()
+
 import os
+openai.api_key = os.getenv("OPEN_AI_KEY")
 import pandas as pd
 import re
 from io import StringIO
 from datetime import datetime, timedelta
-
-# OpenAI APIキー設定（実運用では環境変数推奨）
-openai.api_key = "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"  # ← 有効なAPIキーに差し替えてください
 
 st.title("ざっくり家計簿アプリ")
 
