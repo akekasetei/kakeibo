@@ -1,7 +1,9 @@
 from dotenv import load_dotenv  # ← これが必要！
 import os
-load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
+import openai
+from dotenv import load_dotenv
+load_dotenv()  # .env から環境変数を読み込み
+openai.api_key = os.getenv("OPENAI_API_KEY")  # 環境変数からAPIキーを設定
 import streamlit as st
 import openai
 import pandas as pd
